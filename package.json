@@ -1,0 +1,34 @@
+{
+  "name": "blind-75",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "new-problem": "mkdir -p $npm_config_problem && echo '/*'$npm_config_url'*/\n\nconst '$npm_config_problem' = (args) => {\n  // code\n}\n\nexport default '$npm_config_problem';' > $npm_config_problem/$npm_config_problem.js && echo > $npm_config_problem/$npm_config_problem.test.js",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-thee-creator/blind-75.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyler-thee-creator/blind-75/issues"
+  },
+  "homepage": "https://github.com/tyler-thee-creator/blind-75#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  }
+}
