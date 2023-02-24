@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "new-problem": "mkdir -p $npm_config_problem && echo '/*'$npm_config_url'*/\n\nconst '$npm_config_problem' = (args) => {\n  // code\n}\n\nexport default '$npm_config_problem';' > $npm_config_problem/$npm_config_problem.js && echo > $npm_config_problem/$npm_config_problem.test.js",
+    "new-problem": "mkdir -p $npm_config_problem && echo '/*'$npm_config_url'*/\n\nconst '$npm_config_problem' = (args) => {\n  // code\n}\n\nexport default '$npm_config_problem';' > $npm_config_problem/$npm_config_problem.js && echo 'import '$npm_config_problem' from \\x27./'$npm_config_problem'\\x27;' > $npm_config_problem/$npm_config_problem.test.js",
     "test": "jest"
   },
   "jest": {
